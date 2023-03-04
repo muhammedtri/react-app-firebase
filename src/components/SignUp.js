@@ -1,6 +1,6 @@
 import { createUserWithEmailAndPassword, getAuth } from "firebase/auth"
 import React, { useRef, useState } from "react"
-import { Navigate, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { CustomAlert } from "./CustomAlert"
 
 const SignUp = () => {
@@ -21,7 +21,7 @@ const SignUp = () => {
         setUserCreated("auth/User Created Succesfully")
       })
       .catch((error) => {
-        const errorCode = error.code
+        // const errorCode = error.code
         // ..
       })
   }
